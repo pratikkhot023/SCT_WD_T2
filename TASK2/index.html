@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stopwatch-container">
+    <h1>⏱️Stopwatch!</h1>
+    <div class="time" id="display">00:00:00.000</div>
+    <div class="buttons">
+      <button class="btn start" onclick="startStopwatch()">Start</button>
+      <button class="btn pause" onclick="pauseStopwatch()">Pause</button>
+      <button class="btn reset" onclick="resetStopwatch()">Reset</button>
+      <button class="btn lap" onclick="recordLap()">Lap</button>
+      <button class="btn toggle-mode" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </div>
+    <div class="laps">
+      <ul id="laps"></ul>
+    </div>
+  </div>
+
+  <audio id="lapSound" src="https://www.soundjay.com/button/sounds/button-16.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
